@@ -6,7 +6,7 @@ import (
     `unicode/utf8`
     `unsafe`
 
-    `github.com/chenzhuoyu/iasm/asm`
+    `github.com/cloudwego/iasm/asm`
 )
 
 const (

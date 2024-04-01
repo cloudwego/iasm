@@ -4,7 +4,7 @@ import (
     `math`
     `strings`
 
-    `github.com/chenzhuoyu/iasm/asm`
+    `github.com/cloudwego/iasm/asm`
 )
 
 type (

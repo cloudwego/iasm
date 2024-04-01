@@ -3,7 +3,7 @@ package aarch64
 import (
     `unsafe`
 
-    `github.com/chenzhuoyu/iasm/asm`
+    `github.com/cloudwego/iasm/asm`
 )
 
 func this(p *asm.Instruction) *Instruction {

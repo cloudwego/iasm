@@ -8,7 +8,7 @@ import (
     `strings`
     `unicode`
 
-    `github.com/chenzhuoyu/iasm/expr`
+    `github.com/cloudwego/iasm/expr`
 )
 
 // TokenKind represents the type of a token.

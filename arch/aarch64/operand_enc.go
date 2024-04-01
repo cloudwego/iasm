@@ -3,7 +3,7 @@ package aarch64
 import (
     `math`
 
-    `github.com/chenzhuoyu/iasm/internal/rt`
+    `github.com/cloudwego/iasm/internal/rt`
 )
 
 func asImm8    (v interface{}) uint32 { x, _ := asInt64(v)  ; return uint32(x & 0xff) }

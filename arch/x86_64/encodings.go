@@ -4,7 +4,7 @@ import (
     `encoding/binary`
     `math`
 
-    `github.com/chenzhuoyu/iasm/asm`
+    `github.com/cloudwego/iasm/asm`
 )
 
 /** Operand Encoding Helpers **/

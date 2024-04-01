@@ -1,7 +1,7 @@
 package x86_64
 
 import (
-    `github.com/chenzhuoyu/iasm/asm`
+    `github.com/cloudwego/iasm/asm`
 )
 
 type (

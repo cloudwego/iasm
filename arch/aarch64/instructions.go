@@ -3,7 +3,7 @@
 package aarch64
 
 import (
-    `github.com/chenzhuoyu/iasm/asm`
+    `github.com/cloudwego/iasm/asm`
 )
 
 // ABS instruction have 4 forms across 2 categories:

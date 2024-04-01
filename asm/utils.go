@@ -7,7 +7,7 @@ import (
     `unicode/utf8`
     `unsafe`
 
-    `github.com/chenzhuoyu/iasm/internal/rt`
+    `github.com/cloudwego/iasm/internal/rt`
 )
 
 var (

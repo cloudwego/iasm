@@ -5,7 +5,7 @@ import (
     `strings`
     `testing`
 
-    `github.com/chenzhuoyu/iasm/asm`
+    `github.com/cloudwego/iasm/asm`
     `github.com/stretchr/testify/require`
 )
 

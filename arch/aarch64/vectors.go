@@ -4,7 +4,7 @@ import (
     `fmt`
     `strings`
 
-    `github.com/chenzhuoyu/iasm/asm`
+    `github.com/cloudwego/iasm/asm`
 )
 
 // Vector represents a SIMD vector with a certain number of elements.

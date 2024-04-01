@@ -3,7 +3,7 @@ package aarch64
 import (
     `encoding/binary`
 
-    `github.com/chenzhuoyu/iasm/asm`
+    `github.com/cloudwego/iasm/asm`
 )
 
 const (

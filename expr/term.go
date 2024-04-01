@@ -1,7 +1,7 @@
 package expr
 
 import (
-    `github.com/chenzhuoyu/iasm/internal/tag`
+    `github.com/cloudwego/iasm/internal/tag`
 )
 
 // Term represents a value that can Evaluate() into an integer.

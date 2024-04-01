@@ -7,8 +7,8 @@ import (
     `strconv`
     `strings`
 
-    `github.com/chenzhuoyu/iasm/asm`
-    `github.com/chenzhuoyu/iasm/internal/rt`
+    `github.com/cloudwego/iasm/asm`
+    `github.com/cloudwego/iasm/internal/rt`
 )
 
 // RoundingControl represents a floating-point rounding option.

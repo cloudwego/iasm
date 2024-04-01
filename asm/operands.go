@@ -5,8 +5,8 @@ import (
     `fmt`
     `sync/atomic`
 
-    `github.com/chenzhuoyu/iasm/expr`
-    `github.com/chenzhuoyu/iasm/internal/tag`
+    `github.com/cloudwego/iasm/expr`
+    `github.com/cloudwego/iasm/internal/tag`
 )
 
 // Register represents a hardware register.

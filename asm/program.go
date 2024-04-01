@@ -1,7 +1,7 @@
 package asm
 
 import (
-    `github.com/chenzhuoyu/iasm/expr`
+    `github.com/cloudwego/iasm/expr`
 )
 
 // Program represents a sequence of instructions.

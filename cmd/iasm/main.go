@@ -5,11 +5,11 @@ import (
     `runtime`
     `strings`
 
-    _ `github.com/chenzhuoyu/iasm/arch/aarch64`
-    _ `github.com/chenzhuoyu/iasm/arch/x86_64`
-    `github.com/chenzhuoyu/iasm/asm`
-    `github.com/chenzhuoyu/iasm/obj`
-    `github.com/chenzhuoyu/iasm/repl`
+    _ `github.com/cloudwego/iasm/arch/aarch64`
+    _ `github.com/cloudwego/iasm/arch/x86_64`
+    `github.com/cloudwego/iasm/asm`
+    `github.com/cloudwego/iasm/obj`
+    `github.com/cloudwego/iasm/repl`
     `nullprogram.com/x/optparse`
 )
 

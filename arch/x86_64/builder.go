@@ -3,7 +3,7 @@ package x86_64
 import (
     `unsafe`
 
-    `github.com/chenzhuoyu/iasm/asm`
+    `github.com/cloudwego/iasm/asm`
 )
 
 // Builder returns the x86_64 specific instruction builder.

@@ -8,8 +8,8 @@ import (
     `sync`
     `unsafe`
 
-    `github.com/chenzhuoyu/iasm/expr`
-    `github.com/chenzhuoyu/iasm/internal/tag`
+    `github.com/cloudwego/iasm/expr`
+    `github.com/cloudwego/iasm/internal/tag`
 )
 
 // PseudoType is the type of pseudo-instructions.

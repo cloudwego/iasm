@@ -6,7 +6,7 @@ import (
     `strings`
     `unsafe`
 
-    `github.com/chenzhuoyu/iasm/asm`
+    `github.com/cloudwego/iasm/asm`
 )
 
 type _AssemblerImpl struct {

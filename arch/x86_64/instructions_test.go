@@ -3,7 +3,7 @@ package x86_64
 import (
     `testing`
 
-    `github.com/chenzhuoyu/iasm/asm`
+    `github.com/cloudwego/iasm/asm`
     `github.com/davecgh/go-spew/spew`
 )
 

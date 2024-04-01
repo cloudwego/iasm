@@ -6,8 +6,8 @@ import (
     `os/exec`
     `testing`
 
-    `github.com/chenzhuoyu/iasm/asm`
-    `github.com/chenzhuoyu/iasm/obj`
+    `github.com/cloudwego/iasm/asm`
+    `github.com/cloudwego/iasm/obj`
     `github.com/davecgh/go-spew/spew`
     `github.com/stretchr/testify/require`
 )

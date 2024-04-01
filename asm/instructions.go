@@ -3,7 +3,7 @@ package asm
 import (
     `sync/atomic`
 
-    `github.com/chenzhuoyu/iasm/internal/tag`
+    `github.com/cloudwego/iasm/internal/tag`
 )
 
 // MaxOperands is the maximum number of operands an instruction can take.

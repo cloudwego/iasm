@@ -13,8 +13,8 @@ import (
     `unicode`
     `unsafe`
 
-    `github.com/chenzhuoyu/iasm/asm`
-    `github.com/chenzhuoyu/iasm/utils`
+    `github.com/cloudwego/iasm/asm`
+    `github.com/cloudwego/iasm/utils`
     `github.com/knz/go-libedit`
 )
 

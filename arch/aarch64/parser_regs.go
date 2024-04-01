@@ -3,7 +3,7 @@ package aarch64
 import (
     `fmt`
 
-    `github.com/chenzhuoyu/iasm/asm`
+    `github.com/cloudwego/iasm/asm`
 )
 
 type (

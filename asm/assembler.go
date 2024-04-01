@@ -7,7 +7,7 @@ import (
     `math`
     `strconv`
 
-    `github.com/chenzhuoyu/iasm/expr`
+    `github.com/cloudwego/iasm/expr`
 )
 
 // Symbols is the symbol table used by Assembler.
