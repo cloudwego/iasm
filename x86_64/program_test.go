@@ -4,7 +4,7 @@ import (
     `bytes`
     `testing`
 
-    `github.com/chenzhuoyu/iasm/expr`
+    `github.com/cloudwego/iasm/expr`
     `github.com/davecgh/go-spew/spew`
 )
 

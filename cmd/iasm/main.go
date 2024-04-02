@@ -3,9 +3,9 @@ package main
 import (
     `os`
 
-    `github.com/chenzhuoyu/iasm/obj`
-    `github.com/chenzhuoyu/iasm/repl`
-    `github.com/chenzhuoyu/iasm/x86_64`
+    `github.com/cloudwego/iasm/obj`
+    `github.com/cloudwego/iasm/repl`
+    `github.com/cloudwego/iasm/x86_64`
     `nullprogram.com/x/optparse`
 )
 

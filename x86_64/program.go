@@ -5,7 +5,7 @@ import (
 	"math"
 	"math/bits"
 
-	"github.com/chenzhuoyu/iasm/expr"
+	"github.com/cloudwego/iasm/expr"
 )
 
 type (

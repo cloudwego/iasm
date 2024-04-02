@@ -9,7 +9,7 @@ import (
     `strings`
     `unicode`
 
-    `github.com/chenzhuoyu/iasm/expr`
+    `github.com/cloudwego/iasm/expr`
 )
 
 type (
