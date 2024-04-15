@@ -17,33 +17,48 @@
 // limitations under the License.
 //
 
-package obj
+package x86_64
 
 import (
+    `fmt`
     `os`
     `os/exec`
     `testing`
 
+    `github.com/cloudwego/iasm/obj`
     `github.com/davecgh/go-spew/spew`
     `github.com/stretchr/testify/require`
 )
 
-func TestMachO_Create(t *testing.T) {
+func TestAssembler_Assemble(t *testing.T) {
+    p := new(Assembler)
+    e := p.Assemble(`
+.org 0x08000000
+.entry start
+
+msg:
+    .ascii "hello, world\n"
+
+start:
+    movl    $1, %edi
+    leaq    msg(%rip), %rsi
+    movl    $13, %edx
+    movl    $0x02000004, %eax
+    syscall
+    xorl    %edi, %edi
+    movl    $0x02000001, %eax
+    syscall
+`)
+    require.NoError(t, e)
+    code := p.Code()
+    base := p.Base()
+    entry := p.Entry()
+    spew.Dump(code)
+    fmt.Printf("Image Base  : %#x\n", base)
+    fmt.Printf("Entry Point : %#x\n", entry)
     fp, err := os.CreateTemp("", "macho_out-")
     require.NoError(t, err)
-    code := []byte {
-        0x48, 0xc7, 0xc7, 0x01, 0x00, 0x00, 0x00,   // MOVQ    $1, %rdi
-        0x48, 0x8d, 0x35, 0x1b, 0x00, 0x00, 0x00,   // LEAQ    0x1b(%rip), %rsi
-        0x48, 0xc7, 0xc2, 0x0e, 0x00, 0x00, 0x00,   // MOVQ    $14, %rdx
-        0x48, 0xc7, 0xc0, 0x04, 0x00, 0x00, 0x02,   // MOVQ    $0x02000004, %rax
-        0x0f, 0x05,                                 // SYSCALL
-        0x31, 0xff,                                 // XORL    %edi, %edi
-        0x48, 0xc7, 0xc0, 0x01, 0x00, 0x00, 0x02,   // MOVQ    $0x02000001, %rax
-        0x0f, 0x05,                                 // SYSCALL
-        'h', 'e', 'l', 'l', 'o', ',', ' ',
-        'w', 'o', 'r', 'l', 'd', '\r', '\n',
-    }
-    err = assembleMachO(fp, code, 0, 0)
+    err = obj.MachO.Write(fp, code, uint64(base), uint64(entry))
     require.NoError(t, err)
     err = fp.Close()
     require.NoError(t, err)
@@ -53,7 +68,7 @@ func TestMachO_Create(t *testing.T) {
     out, err := exec.Command(fp.Name()).Output()
     require.NoError(t, err)
     spew.Dump(out)
-    require.Equal(t, []byte("hello, world\r\n"), out)
+    require.Equal(t, []byte("hello, world\n"), out)
     err = os.Remove(fp.Name())
     require.NoError(t, err)
 }
