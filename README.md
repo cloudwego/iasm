@@ -21,7 +21,7 @@ See `x86_64/program_test.go` for more info.
 For `macOS`:
 
 ```bash
-git clone https://github.com/chenzhuoyu/iasm
+git clone https://github.com/cloudwego/iasm
 cd iasm
 go build ./cmd/iasm
 ./iasm -h
